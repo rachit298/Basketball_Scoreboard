@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Timer;
+  src: url("./CursedTimerUlil-Aznm.ttf");
+}
+
+body {
+  background: url("./kenny-eliason-UegcSdRtmlg-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -400px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-evenly;
+  width: 575px;
+  height: 385px;
+  background-color: rgba(27, 36, 74, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+#firstPart,
+#secondPart {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score {
+  background-color: rgba(8, 0, 1, 1);
+  width: 155px;
+  height: 120px;
+  line-height: 126.7px;
+  margin-top: 15px;
+  margin-bottom: 27px;
+  color: rgba(249, 79, 109, 1);
+}
+
+.score,
+button {
+  font-family: Timer, "Times New Roman", Times, serif;
+}
+
+button {
+  width: 45px;
+  height: 45px;
+  border: 2px solid rgba(154, 171, 216, 1);
+  border-radius: 5px;
+  background-color: rgba(27, 36, 74, 1);
+  color: rgba(154, 171, 216, 1);
+  font-size: 0.1em;
+  transition: box-shadow 0.5s;
+}
+
+#buttonsContainer {
+  width: 155px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreCount,
+.guestscoreCount {
+  font-size: 4rem;
+  transform: translateY(5px);
+}
+
+#resetButton {
+  width: 150px;
+  margin-top: 10px;
+  border: 2px solid white;
+  padding: 2px;
+}
+
+button:hover {
+  color: white;
+  box-shadow: 2px 2px 15px grey;
+}

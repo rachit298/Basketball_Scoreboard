@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2H02OE_TC_Vh-BkTCsV5Fvim2rk9SyUtp2w&usqp=CAU"
+    />
+  </head>
+  <body>
+    <div id="scoreboard">
+      <div id="firstPart">
+        <h1 id="names">HOME</h1>
+        <div id="homeScore" class="score">
+          <h1 id="homeScoreCount" class="scoreCount">0</h1>
+        </div>
+        <div id="buttonsContainer">
+          <button onclick="incByOneHomeScore()">+1</button>
+          <button onclick="incByTwoHomeScore()">+2</button>
+          <button onclick="incByThreeHomeScore()">+3</button>
+        </div>
+      </div>
+      <div id="secondPart">
+        <h1 id="names">GUEST</h1>
+        <div id="guestScore" class="score">
+          <h1 id="guestScoreCount" class="scoreCount">0</h1>
+        </div>
+        <div id="buttonsContainer">
+          <button onclick="incByOneGuestScore()">+1</button>
+          <button onclick="incByTwoGuestScore()">+2</button>
+          <button onclick="incByThreeGuestScore()">+3</button>
+        </div>
+      </div>
+    </div>
+    <button id="resetButton" onclick="reset()">NEW GAME</button>
+    <script src="./basketballScoreboard.js"></script>
+  </body>
+</html>
